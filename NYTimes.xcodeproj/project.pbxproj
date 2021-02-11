@@ -20,6 +20,7 @@
 		4E4850E325D4E7EE000643D4 /* ViewedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4850E225D4E7EE000643D4 /* ViewedTableViewController.swift */; };
 		4E4850E625D4E7FE000643D4 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4850E525D4E7FE000643D4 /* FavoriteViewController.swift */; };
 		4E4850E925D4E9A8000643D4 /* LoadedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4850E825D4E9A8000643D4 /* LoadedData.swift */; };
+		4E4850F025D4FC98000643D4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4850EF25D4FC98000643D4 /* SecondViewController.swift */; };
 		D2A527A0F2363BB7F9B300DD /* Pods_NYTimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E4C2DE247DFD6340689352 /* Pods_NYTimes.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		4E4850E225D4E7EE000643D4 /* ViewedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedTableViewController.swift; sourceTree = "<group>"; };
 		4E4850E525D4E7FE000643D4 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		4E4850E825D4E9A8000643D4 /* LoadedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadedData.swift; sourceTree = "<group>"; };
+		4E4850EF25D4FC98000643D4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		67E4C2DE247DFD6340689352 /* Pods_NYTimes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTimes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9234FDB84959FBA3B975A29E /* Pods-NYTimes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimes.release.xcconfig"; path = "Target Support Files/Pods-NYTimes/Pods-NYTimes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +98,7 @@
 				4E05DE0B25D4DDA600583CD8 /* LaunchScreen.storyboard */,
 				4E05DE0E25D4DDA600583CD8 /* Info.plist */,
 				4E05DE0625D4DDA200583CD8 /* NYTimes.xcdatamodeld */,
+				4E4850EF25D4FC98000643D4 /* SecondViewController.swift */,
 			);
 			path = NYTimes;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4850F025D4FC98000643D4 /* SecondViewController.swift in Sources */,
 				4E4850E925D4E9A8000643D4 /* LoadedData.swift in Sources */,
 				4E05DE0225D4DDA200583CD8 /* ViewController.swift in Sources */,
 				4E05DE1B25D4DE5600583CD8 /* Data.swift in Sources */,

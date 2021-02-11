@@ -105,6 +105,39 @@
             </objects>
             <point key="canvasLocation" x="1435" y="897"/>
         </scene>
+        <!--Second View Controller-->
+        <scene sceneID="eCU-mK-Yui">
+            <objects>
+                <viewController id="Ik4-tX-0m8" customClass="SecondViewController" customModule="NYTimes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MMN-Vq-jDc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipj-97-vKU">
+                                <rect key="frame" x="50" y="50" width="314" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tWv-f1-oqj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tWv-f1-oqj" firstAttribute="trailing" secondItem="Ipj-97-vKU" secondAttribute="trailing" constant="50" id="3Km-1j-kED"/>
+                            <constraint firstItem="Ipj-97-vKU" firstAttribute="centerX" secondItem="MMN-Vq-jDc" secondAttribute="centerX" id="HaF-vf-z7O"/>
+                            <constraint firstItem="Ipj-97-vKU" firstAttribute="leading" secondItem="tWv-f1-oqj" secondAttribute="leading" constant="50" id="Sm3-Rt-3Zg"/>
+                            <constraint firstItem="Ipj-97-vKU" firstAttribute="top" secondItem="tWv-f1-oqj" secondAttribute="top" constant="50" id="g7O-AA-N09"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3bN-SB-fUh"/>
+                    <connections>
+                        <outlet property="textLabel" destination="Ipj-97-vKU" id="nkb-Ap-GJe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JPl-t0-0GC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-367" y="-635"/>
+        </scene>
         <!--Favorite-->
         <scene sceneID="Ruk-TU-crB">
             <objects>
@@ -121,6 +154,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Ik4-tX-0m8" kind="show" identifier="Second" id="L2X-JU-cIj"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

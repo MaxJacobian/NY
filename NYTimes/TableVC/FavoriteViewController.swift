@@ -10,7 +10,7 @@ import CoreData
 
 class FavoriteViewController: UITableViewController {
     
-     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     let fetchRequest: NSFetchRequest<Article> = Article.fetchRequest()
     
     var article: [Article] = []
@@ -22,6 +22,17 @@ class FavoriteViewController: UITableViewController {
             tableView.reloadData()
         } catch let error as NSError {
             print(error.localizedDescription)
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? UITableViewCell, let index = tableView.indexPath(for: cell) {
+            guard segue.identifier == "Second" else { return }
+            guard let vc = segue.destination as? SecondViewController else { return }
+            
+            DispatchQueue.main.async {
+                vc.textLabel.text = self.article[index.row].title ?? ""
+                
+            }
         }
     }
     
@@ -48,3 +59,4 @@ class FavoriteViewController: UITableViewController {
     }
     
 }
+
